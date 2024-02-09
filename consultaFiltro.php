@@ -7,11 +7,8 @@
     </head>
     <body>
         
-        <nav aria-label="breadcrumb" class="container-fluid bg-light">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php" class="text-dark">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Buscar Título</li>
-            </ol>
+        <nav aria-label="breadcrumb">
+           <a href="index.php" class="text-dark">Inicio</a>/Buscar Título
         </nav>
         <?php    
               if (!isset($_POST['filtro'])) {
