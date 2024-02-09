@@ -12,7 +12,7 @@
               require_once("conexion.php");
               //Extraemos todos los datos del formulario//
               extract($_POST);
-              //vamos a comprobar si existe el id dentro de nuestra tabla personas para comunicárselo al usuario//
+              //vamos a comprobar si existe el campo llave (id) dentro de nuestra tabla para comunicárselo al usuario//
               //Preparamos la sentencia SQL por parámetros//
               $param = $cnx->prepare("SELECT id FROM peliculas WHERE id like ?");
               //Esta Sentencia SQL Buscar un id que sea igual al que vamos a suministrar por parámetro ? que se lo vamos a sustituir por el introducido por el formulario en la siguiente sentencia//
@@ -26,7 +26,7 @@
                     $data = $param->get_result(); //Cogemos los resultados devueltos por la consulta//
                     if ($data->num_rows > 0) {
                         //Si nos devuelve un resultado mayor de 0 quiere decir que hemos encontrado ese NIF en la tabla, avisamos//
-                        echo "El Identificador introducido ya existe<br><a href='formularioInsertar.php' class='btn btn-dark'>VOLVER AL FORMULARIO</a>";
+                        echo "El Identificador introducido ya existe<br><a href='formularioInsertar.php'>VOLVER AL FORMULARIO</a>";
                     }
                     else{
                         //En caso de que no exista el nif pasamos a su almacenamiento//
@@ -38,10 +38,10 @@
                         $param->bind_param("sssss",$id,$titulo,$genero,$fechaInicio,$fechaFin);
                         $param->execute();
                         if ($param->error) {
-                            echo "Se ha producido un error, inténtalo más tarde<br><a href='addFilm.php' class='btn btn-dark'>VOLVER AL FORMULARIO</a>";
+                            echo "Se ha producido un error, inténtalo más tarde<br><a href='formularioInsertar.php'>VOLVER AL FORMULARIO</a>";
                         }
                         else {
-                            echo "El proceso se ha realizado con éxito<br><a href='addFilm.php' class='btn btn-dark'>VOLVER AL FORMULARIO</a>";
+                            require_once("exito.php");
                         }
                     }
                 }
