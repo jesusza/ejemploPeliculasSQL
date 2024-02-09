@@ -28,7 +28,6 @@
         <?php    
 
             require_once("conexion.php"); // Es necesario que 
-              
             $SQL = "SELECT * FROM peliculas";
              
             //Preparamos la sentencia a ejecutar, en este caso como son todos los registros a mostrar no hay parámetros//
