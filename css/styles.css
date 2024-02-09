@@ -3,8 +3,9 @@
 
 
 body{
-    font-family: 'Ysabeau Infant', sans-serif;
+    /*font-family: 'Ysabeau Infant', sans-serif;*/
     font-size: 1.2em;
+    
 }
 
 .header{
@@ -27,16 +28,25 @@ h1 {
 
 h2 {
     font-weight: 400;
-    color: #dc3545; 
+     color: #dc3545; 
     font-family: 'Caprasimo', cursive;
     margin-bottom: 1em;
 
 }
-
+form {
+    margin: 1em auto;
+    width: 60vw;
+  max-width: 600px;
+  min-width: 300px;
+ }
 
 /* Lo pongo del mismo tono que el danger del bootstrap */
 .colorDanger{
     background-color: #dc3545; 
+}
+
+.textoDanger{
+    color: #dc3545; 
 }
 .nav-link{
     font-family: 'Caprasimo', cursive;
