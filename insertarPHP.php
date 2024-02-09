@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Guardar datos de Películas</title>
+        <title>Guardar datos en la BD</title>
         <link href="css/styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>

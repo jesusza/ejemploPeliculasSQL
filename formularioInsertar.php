@@ -31,11 +31,7 @@
                         <div class="mt-4">
                             <span class="text-bg-danger p-2">(*) Datos Obligatorios</span>
                         </div>
-                    </div>
-                    </div>
-                    
-                </div>
-                
+                      
             </form>
         </section>
     

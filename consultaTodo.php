@@ -37,7 +37,7 @@
                 //fetch assoc devuelve un array o fila que se carga en la variable $row (la podremos llamar como queramos)//
                 extract($row); //Extraemos cada fila y creamos los tr y td//
                 // Los campos serán como estén llamados en la base de datos
-                echo "<tr><td class='text-center'>$id</td><td class='text-center'>$titulo</td><td class='text-center'>$genero</td><td class='text-center'>$fechaInicio</td><td class='text-center'>$fechaFin</td><td class='text-center'><a href='actualizarDatos.php?id=$id' class='btn btn-warning'>Modificar</a></td><td class='text-center'><a href='modificarDatos.php?id=$id' class='btn btn-danger'>Eliminar</a></td></tr>";
+                echo "<tr><td class='text-center'>$id</td><td class='text-center'>$titulo</td><td class='text-center'>$genero</td><td class='text-center'>$fechaInicio</td><td class='text-center'>$fechaFin</td><td class='text-center'><a href='formularioModificar.php?id=$id' class='btn btn-warning'>Modificar</a></td><td class='text-center'><a href='formularioEliminar.php?id=$id' class='btn btn-danger'>Eliminar</a></td></tr>";
             }                
             $cnx->close();//Cerramos la conexión//
             ?>                

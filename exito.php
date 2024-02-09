@@ -6,10 +6,8 @@
         <link href="css/styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <ul>
-            <li><a href="consultaTodo.php">Recuperar todas las filas en nuestra tabla</a></li>
-            <li><a href="formularioInsertar.php">Insertar datos en nuestra tabla</a></li>
-        </ul>
-       
+        La operación se ha realizado con exito en la BD
+        <div><a href="index.php">Volver al indice </a></div>
+           
     </body>
 </html>
