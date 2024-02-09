@@ -23,27 +23,26 @@
       
         <section>
         <form name="formModificar" id="formModificar" action="modificarPHP.php" method="post">
-                <h2>Entrada de Películas a la Base de Datos</h2>
+            <h2>Entrada de Datos a la Base de Datos</h2>
                
-                        <div><label class="form-label">Identificador <span class="textoDanger">(*)</span></label>
-                        <input type="text" readonly name="id" id="id" value="<?php echo $id; ?>"></div>
+                <div><label class="form-label">Identificador <span class="textoDanger">(*)</span></label>
+                <input type="text" readonly name="id" id="id" value="<?php echo $id; ?>"></div>
                       
-                        <div><label class="form-label">Título <span class="textoDanger">(*)</span></label>
-                        <input type="text" required name="titulo" id="titulo" value="<?php echo $titulo; ?>"></div>
+                <div><label class="form-label">Título <span class="textoDanger">(*)</span></label>
+                <input type="text" required name="titulo" id="titulo" value="<?php echo $titulo; ?>"></div>
                         
-                        <div><label class="form-label">Género <span class="textoDanger">(*)</span></label>
-                        <input type="text" required name="genero" id="genero" value="<?php echo $genero; ?>"></div>
+                <div><label class="form-label">Género <span class="textoDanger">(*)</span></label>
+                <input type="text" required name="genero" id="genero" value="<?php echo $genero; ?>"></div>
 
-                        <div><label class="form-label">Fecha de Inicio de Proyección <span class="textoDanger">(*)</span></label>
-                        <input type="date" required name="fechaInicio" id="fechaInicio" value="<?php echo $fechaInicio; ?>"></div>
+                <div><label class="form-label">Fecha de Inicio de Proyección <span class="textoDanger">(*)</span></label>
+                <input type="date" required name="fechaInicio" id="fechaInicio" value="<?php echo $fechaInicio; ?>"></div>
 
-                        <div><label class="form-label">Fecha de Fin de Proyección <span class="textoDanger">(*)</span></label>
-                        <input type="date" required name="fechaFin" id="fechaFin" value="<?php echo $fechaFin; ?>"></div>
+                <div><label class="form-label">Fecha de Fin de Proyección <span class="textoDanger">(*)</span></label>
+                <input type="date" required name="fechaFin" id="fechaFin" value="<?php echo $fechaFin; ?>"></div>
                        
-                        <input type="submit" value="ACTUALIZA DATOS" name="saveData" id="saveData">
-                        <div class="mt-4">
-                            <span class="text-bg-danger p-2">(*) Datos Obligatorios</span>
-                        </div>
+                <input type="submit" value="ACTUALIZA DATOS" name="saveData" id="saveData">
+                        
+                <div><span class="text-bg-danger p-2">(*) Datos Obligatorios</span></div>
                       
             </form>
 
