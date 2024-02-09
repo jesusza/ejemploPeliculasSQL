@@ -9,7 +9,7 @@
     <body>
         
         <section>
-            <form name="formPerson" id="formPerson" action="saveFilm.php" method="post">
+            <form name="formPerson" id="formPerson" action="insertarPHP.php" method="post">
                 <h2>Entrada de Películas a la Base de Datos</h2>
                
                         <div><label class="form-label">Identificador <span class="textoDanger">(*)</span></label>

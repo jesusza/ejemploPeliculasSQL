@@ -1,6 +1,6 @@
 <?php
  
-    extract($_GET);
+    extract($_GET); // Le estamos pasando el id en la URL
     require_once("conexion.php");
     $param = $cnx->prepare("DELETE FROM peliculas WHERE id like ?");
     $param->bind_param("s",$id);

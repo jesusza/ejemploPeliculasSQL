@@ -8,7 +8,7 @@
     <body>
        
     <section>
-        <h2 class="text-bg-warning p-3">Resultados</h2>
+        <h2>Resultados</h2>
 
             <!-- Creamos nuestra tabla y su cabecera -->
             <table class="table">
@@ -32,6 +32,7 @@
              
             //Preparamos la sentencia a ejecutar, en este caso como son todos los registros a mostrar no hay parámetros//
             $data = $cnx->query($SQL); //Esta sentencia ejecuta el SQL y el resultado lo carga en la variable $data, ahora solo con un bucle vamos mostrando los resultados//
+           
             while ($row = $data->fetch_assoc()) {
                 //fetch assoc devuelve un array o fila que se carga en la variable $row (la podremos llamar como queramos)//
                 extract($row); //Extraemos cada fila y creamos los tr y td//
