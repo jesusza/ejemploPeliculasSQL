@@ -57,14 +57,14 @@
                             //get result recoge los resultados obtenidos y los carga en la variable data//
                             if ($data->num_rows == 0) {
                                 echo "Ese Titulo no está en la Base de Datos<br>";
-                                echo "<a href='listaTitulo.php' class='btn btn-secondary'>Volver</a>";
+                                echo "<a href='consultaFiltro.php' class='btn btn-secondary'>Volver</a>";
                             }
                             else {
                                 
                             while ($row = $data->fetch_assoc()) {
                                 //fetch assoc devuelve un array o fila que se carga en la variable $row (la podremos llamar como queramos)//
                                 extract($row); //Extraemos cada fila y creamos los tr y td//
-                                echo "<tr><td class='text-center'>$id</td><td class='text-center'>$titulo</td><td class='text-center'>$genero</td><td class='text-center'>$fecha</td><td class='text-center'>$fecha2</td><td class='text-center'><a href='updateFilm.php?id=$id' class='btn btn-warning'>Modificar</a></td><td class='text-center'><a href='deleteFilm.php?id=$id' class='btn btn-danger'>Eliminar</a></td></tr>";
+                                echo "<tr><td class='text-center'>$id</td><td class='text-center'>$titulo</td><td class='text-center'>$genero</td><td class='text-center'>$fecha</td><td class='text-center'>$fecha2</td><td class='text-center'><a href='formularioModificar.php?id=$id' class='btn btn-warning'>Modificar</a></td><td class='text-center'><a href='formularioEliminar.php?id=$id' class='btn btn-danger'>Eliminar</a></td></tr>";
                             }
                             $cnx->close();//Cerramos la conexión//
                         ?>
